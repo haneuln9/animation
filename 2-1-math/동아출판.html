@@ -42,10 +42,35 @@
         main #deco .obj5 {z-index:11; right:150px; bottom:0;}
         main #deco .obj6 {z-index:12; left:-50px; bottom:100px;}
         main #deco .obj7 {z-index:12; right:50px; top:-30px;}
-        
+        /*css*/
+        main #deco .obj2 {animation:book 1s ease-out forwards;}
+        main #deco .obj3 {animation:oct 0.5s ease 1s both; }
+        main #deco .obj6 {animation:star 0.8s linear infinite alternate;}
+        main #deco .obj7 {animation:star 0.5s linear infinite alternate;}
+        main #deco .obj5 {animation:flower_line 1s linear alternate-reverse infinite;}
+        main #deco .obj1 {animation:flower_line 2s linear alternate infinite;}
+        main #deco .obj4 {animation:bee 0.5s ease 0.5s both;}
         /* 애니메이션 */
-        
-
+        @keyframes book {
+            0% {transform:translateX(100px);}
+            100% {transform:translateX(0);}
+        }
+        @keyframes oct { 
+            0% {transform:translateY(0);}
+            100% {transform:translateY(-130px);}
+        }
+        @keyframes star {
+            0% {transform:scale(1);}
+            100% {transform:scale(1.2);}
+        }
+        @keyframes flower_line {
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(10deg);}
+        }
+        @keyframes bee {
+            0% {transform:rotate(0) translate(0, 0);}
+            100% {transform:rotate(60deg) translate(-150px, 500px);}
+        }
     </style>
 </head>
 <body>
