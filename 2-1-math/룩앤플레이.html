@@ -67,9 +67,26 @@
             text-align:center; background:#f1f1f1; color:#222;
         }
         main .category a.active {background:#26bad7; color:#fff;}
+        /**/
+        main #visual #deco .obj2 {animation:star 0.8s linear infinite alternate;}
+        main #visual #deco .obj4 {animation:star 0.8s linear infinite alternate;}
+        main #visual #deco .obj7 {animation:star 0.8s linear infinite alternate;}
+        main #visual #deco .obj9 {animation:star 0.8s linear infinite alternate;}
 
+        main #visual #deco .obj1 {animation:rotate 10s linear alternate infinite ;}/*선*/
+        main #visual #deco .obj3 {animation:rotate 3s linear alternate infinite;}/*첨성대*/
+        main #visual #deco .obj5 {animation:rotate 3s linear alternate infinite;}/*1층*/
+        main #visual #deco .obj6 {animation:rotate 3s linear alternate-reverse infinite;}/*돌하르방*/
+        main #visual #deco .obj8 {animation:rotate 2s linear alternate infinite;}/*2층*/
         /* 애니메이션 */
-
+        @keyframes star {
+            0% {transform:scale(1);}
+            100% {transform:scale(1.2);}
+        }
+        @keyframes rotate {
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(20deg);}
+        }
     </style>
 </head>
 <body>

@@ -70,7 +70,24 @@
         }
         main .center .right span:nth-child(1) {}
         main .center .right span:nth-child(2) {text-align:center; line-height:174px;}
+        /*css*/
+        main .center .right span:nth-child(1) {animation:round 5s linear alternate infinite;}
+        main .center h1 span:nth-child(1) {animation:text 0.5s ease both ; color:#fff;}
+        main .center h1 span:nth-child(2) {animation:text 0.5s  ease 0.5s  both  ; color:#fff;}
+        main .center .right {animation:move 1s ease-out forwards;}
         /* animation */
+        @keyframes text {
+            0% {opacity:0; transform:translateY(0);}
+            100% {opacity:1; transform:translateY(-40px); }
+        }
+        @keyframes round {
+            0% {transform:rotate(0);}
+            100% {transform:rotate(100deg);}
+        }
+        @keyframes move {
+            0% {opacity:0; transform:translateX(100px); }
+            100% {opacity:1; transform:translateX(0);}
+        }
     </style>
 </head>
 <body>
